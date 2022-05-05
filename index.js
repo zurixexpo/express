@@ -3,13 +3,13 @@ const path = require('path');
 
 const app = express();
 
-app.use('/static', express.static(path.resolve(__dirname, "frontend", "static")));
+app.use('/static', express.static(path.resolve(__dirname, "../frontend", "static")));
 
 
 app.get('/*', (req, res) =>{
-	res.sendFile(path.resolve(__dirname, "frontend", "index.html"));
+	res.sendFile(path.resolve(__dirname, "../frontend", "index.html"));
 });
 
-app.listen(process.env.PORT || 8081, () =>{
-	console.log("server Started")
+app.listen(8081, () =>{
+	console.log("server Started at 8081")
 })
