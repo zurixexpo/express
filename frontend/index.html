@@ -4,14 +4,24 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Router test</title>
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
 </head>
 <body>
 
-	<nav>
+	<nav class="flex">
+		<div class="mini-nav flex">
+		<img src="static/image/logo_pass.svg" relink="/home" data-Img>
 		<a href="/" data-link>Home</a>
 		<a href="/posts" data-link>Posts</a>
 		<a href="/about" data-link>About us</a>
+		</div>
+		<div class="mnav">
+			<img src="static/image/logo_pass.svg" relink="/home" data-Img>
+			<div class="ctr-n"></div>
+			<div class="m-menu flex"><img src="static/image/menu-svgrepo-com.svg"></div>
+		</div>
 	</nav>
+	<main id="main" class="flex"></main>
 <script type="module" src="static/js/index.js"></script>
 </body>
 </html>
