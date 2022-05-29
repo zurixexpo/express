@@ -10,6 +10,6 @@ app.get('/*', (req, res) =>{
 	res.sendFile(path.resolve(__dirname, "../frontend", "index.html"));
 });
 
-app.listen(8081, () =>{
-	console.log("server Started at 8081")
+app.listen(process.env.PORT || 3000, () =>{
+	console.log("server Started")
 })
